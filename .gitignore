@@ -1,0 +1,4 @@
+node_modules/
+.vscode-test/
+*.vsix    # Packaged extension files
+.DS_Store # For Mac users

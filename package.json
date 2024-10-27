@@ -1,0 +1,39 @@
+{
+  "name": "flutter-vscode-extension",
+  "displayName": "flutter-vscode-extension",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "flutter-vscode-extension.lunchFlutterApp",
+        "title": "Lunch Flutter App 😎"
+      },
+      {
+        "command": "flutter-vscode-extension.sendMessageToFlutter",
+        "title": "Say hi to fluter 👋"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "eslint": "^9.11.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
